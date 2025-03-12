@@ -3,12 +3,12 @@ const bodyEl = document.querySelector(".body");
 const footerEl = document.querySelector(".footer");
 
 const loadFontFn = async ()=>{
-  var GideonRomanFont = new FontFace("xsjGideonRoman", "url(/fonts/GideonRoman-Regular.ttf)", {
+  var GideonRomanFont = new FontFace("xsjGideonRoman", "url(../../../fonts/GideonRoman-Regular.ttf)", {
     style: 'normal'
   });
   document.fonts.add(GideonRomanFont)
 
-  var OswaldFont = new FontFace("xsjOswald", "url(/fonts/Oswald-Bold.ttf)", {
+  var OswaldFont = new FontFace("xsjOswald", "url(../../../fonts/Oswald-Bold.ttf)", {
     style: 'normal'
   });
   document.fonts.add(OswaldFont)
