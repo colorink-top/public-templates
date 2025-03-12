@@ -1,0 +1,34 @@
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.background{
+  position: absolute;
+  inset: 0;
+}
+
+.shape {
+  position: absolute;
+  inset: 0;
+  --shape: 0 0,100% 0,50% 100%,0 0; /* the first value is repeated at the end */
+
+  clip-path: polygon(var(--shape));
+}
+.shape.invert {
+  --s: -20px; /* to control the space */
+  padding: calc(-1*var(--s));
+  box-sizing: content-box;
+  clip-path:
+    polygon(evenodd,var(--s) var(--s),calc(100% - var(--s)) var(--s),calc(100% - var(--s)) calc(100% - var(--s)),var(--s) calc(100% - var(--s)),var(--s) var(--s),var(--shape)) content-box;
+}
+
+.rect {
+  --shape: 100% 0,0 0,0 100%, 100% 100%,100% 0;
+}
+
+
+.background{
+  background: url(1.jpg) 0% 0% / cover;
+}

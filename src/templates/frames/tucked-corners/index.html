@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        position: relative;
+        display: flex;
+      }
+.background {
+  position: absolute;
+  border-width: 60px;
+  border-style: solid;
+  border-color: #e6e6e6;
+  inset: 0;
+}
+
+.corners { 
+  flex: 1;
+  margin: 60px;
+  position: relative;
+  box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
+}
+
+/* Corner Effect */
+.corners:after,
+.corners:before {
+  background: #e6e6e6;
+  content: '';
+  height: 50px;
+  position: absolute;
+  top: -25px;
+  width: 100px;
+  box-shadow: 0 5px 10px -7px hsla(0, 0% ,0%, 0.5);
+}
+.corners:after {
+  left: -50px;
+  transform: rotate(-45deg);
+}
+.corners:before {
+  right: -50px;
+  transform: rotate(45deg);
+}
+  </style>
+
+
+</head>
+<body>
+  <div class="background"></div>
+  <div class="corners">
+  </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "67312a5d-7c02-4667-b252-d2ab42bff84a",
+    "name": "default",
+    "remote": true,
+    "author": "xsj",
+    "preview": "templates/frames/default/index.html",
+    "path": "templates/frames/default/template.json"
+  },
+  {
+    "id": "4cf03f73-a2e1-45dd-86fd-45d53bf13d94",
+    "name": "3D Picture Frame",
+    "remote": true,
+    "author": "xsj",
+    "preview": "templates/frames/3d-picture/index.html",
+    "path": "templates/frames/3d-picture/template.json"
+  },
+  {
+    "id": "e21b84fe-cc4a-4f87-abdf-4514f421b8d8",
+    "name": "background-images",
+    "remote": true,
+    "author": "xsj",
+    "preview": "templates/frames/background-images/index.html",
+    "path": "templates/frames/background-images/template.json"
+  },
+  {
+    "id": "73b6d6a1-4422-485d-828a-ef2a231f70d1",
+    "name": "masks",
+    "remote": true,
+    "author": "xsj",
+    "preview": "templates/frames/masks/index.html",
+    "path": "templates/frames/masks/template.json"
+  },
+  {
+    "id": "2e2b8475-b8eb-4e54-8022-81de4113a44d",
+    "name": "browserleaks",
+    "remote": true,
+    "author": "xsj",
+    "preview": "templates/frames/browserleaks/index.html",
+    "path": "templates/frames/browserleaks/template.json"
+  },
+  {
+    "id": "6bbe1d8f-bfa4-4c72-8dad-b22beedc8cad",
+    "name": "mac",
+    "remote": true,
+    "author": "xsj",
+    "preview": "templates/frames/mac/index.html",
+    "path": "templates/frames/mac/template.json"
+  },
+  {
+    "id": "65f03687-84f4-4e5c-b304-2242407f611f",
+    "name": "Mental Picture Frame",
+    "remote": true,
+    "author": "xsj",
+    "preview": "templates/frames/metal-picture/index.html",
+    "path": "templates/frames/metal-picture/template.json"
+  },
+  {
+    "id": "ef843e86-a720-4fa8-ae8f-67ee0ade6ae1",
+    "name": "Tucked Corners Frame",
+    "remote": true,
+    "author": "xsj",
+    "preview": "templates/frames/tucked-corners/index.html",
+    "path": "templates/frames/tucked-corners/template.json"
+  },
+  {
+    "id": "d5d0c7ff-38e6-43fe-a1d0-3dad56967e3f",
+    "name": "Simple Blue Frame",
+    "remote": true,
+    "author": "xsj",
+    "preview": "templates/frames/simple-blue/index.html",
+    "path": "templates/frames/simple-blue/template.json"
+  },
+  {
+    "id": "9ee8a34c-9c92-4ac2-8504-1ee8bb939946",
+    "name": "Just One Page PDF",
+    "remote": true,
+    "author": "xsj",
+    "preview": "templates/frames/jopp/index.html",
+    "path": "templates/frames/jopp/template.json"
+  },
+  {
+    "id": "a58c188f-0b50-41b2-b5b1-745cd47ea643",
+    "name": "Picture Frame",
+    "remote": true,
+    "author": "xsj",
+    "preview": "templates/frames/picture/index.html",
+    "path": "templates/frames/picture/template.json"
+  },
+  {
+    "id": "bea282da-f6ea-4596-a9c2-70b4646f8450",
+    "name": "Windows Dark",
+    "remote": true,
+    "author": "xsj",
+    "preview": "frames-designer/index.html",
+    "path": "frames-designer/template.json"
+  }
+]

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+      .hide{
+        display: none!important;
+      }
+      .header, .body, .footer{
+        width: 100%;
+      }
+      .body {
+        flex: 1;
+      }
+      .header {
+        min-height: 160px;
+        background: url(./wave.svg);
+        background-size: cover;
+        background-position: bottom;
+      }
+      .footer {
+        background: blue;
+      }
+    </style>
+  <script src="../../libs/moment-with-locales.js"></script>
+  <script src="../../libs/nunjucks.js"></script>
+  </head>
+  <body>
+    <div class="header">a</div>
+    <div class="body"></div>
+    <div class="footer">b</div>
+    <script>
+      const headerEl = document.querySelector(".header")
+      const bodyEl = document.querySelector(".body")
+      const footerEl = document.querySelector(".footer")
+      window.joppInit = async function (opts) {
+        const {templateInfo, documentInfo, pdfInfo} = opts;
+        switch(templateInfo.region) {
+          case "header": {
+            bodyEl.classList.add('hide')
+            footerEl.classList.add('hide')
+            break
+          }
+          case "footer": {
+            headerEl.classList.add('hide')
+            bodyEl.classList.add('hide')
+            break
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        color: white;
+      }
+      a{
+        color: white;
+      }
+      .bar{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,7db9e8+100 */
+background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    overflow: visible;
+      display: flex;
+        height: 40px;
+      }
+      .logo{
+        height: 80px;
+      }
+      .host{
+        font-weight: bolder;
+          align-content: center;
+          height: 100%;
+      }
+    </style>
+  <script src="../../libs/moment-with-locales.js"></script>
+  <script src="../../libs/nunjucks.js"></script>
+  </head>
+  <body>
+    <div class="bar">
+      <img src="./Yin_yang.svg" class="logo">
+      <span class="host">
+        <a href="https://colorink.top">colorink.top</a>
+      </span>
+      <a href="https://www.colorink.top" style="position: relative; top: 50px; color:red;">hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh:w
+      </a>
+    </div>
+    <script>
+      window.joppLoadedFn = async function (opts) {
+        const {frameInfo, documentInfo, pdfInfo} = opts;
+        const barEl = document.querySelector('.bar');
+        const logoEl = document.querySelector('.logo')
+        const hostEl = document.querySelector('.host')
+        hostEl.innerHTML = ''
+        const aEl = document.createElement('a')
+        aEl.href = documentInfo.url
+        aEl.innerText = documentInfo.hostname
+        hostEl.append(aEl);
+        barEl.style.height = frameInfo.offsetTop + 'px'
+        logoEl.style.height = (frameInfo.offsetTop * 2) + 'px';
+        console.log("opts::::", opts);
+      };
+    </script>
+  </body>
+</html>

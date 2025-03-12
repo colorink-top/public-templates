@@ -1,0 +1,118 @@
+:root{
+  --brand-color-dark: #af1f1f;
+  --brand-color: #d93838;
+  --rotate-deg: 45deg;
+}
+*{
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.hide {
+  display: none !important;
+}
+.header,
+.body,
+.footer {
+  width: 100%;
+}
+.body {
+  flex: 1;
+}
+.header {
+  min-height: 80px;
+
+  position: relative;
+  text-align: center;
+  color: var(--brand-color-dark);
+}
+.header a {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+
+.header .header-normal-layer,
+.header .header-text-layer{
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 0;
+  height: 40px;
+  font-family: 'xsjGideonRoman', serif;
+}
+.header .header-normal-layer{
+  background: var(--brand-color);
+  background: linear-gradient(0deg, var(--brand-color), var(--brand-color-dark));
+}
+.header .header-mask-layer{
+  position:absolute;
+  inset: 0;
+  mask-image: url(../images/wave.svg);
+  mask-size: cover;
+  mask-size: min(100%, 700px);
+  mask-position: bottom;
+  mask-repeat: no-repeat;
+  background-color: var(--brand-color);
+}
+.header .header-text-layer{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  background-color: var(--brand-color);
+  background-image: linear-gradient(180deg, var(--brand-color-dark) .5%, var(--brand-color));
+  padding: 50px 0;
+  margin: 100px auto 0;
+  color: white;
+}
+
+.footer .details{
+  background-image: url(../images/jopp.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.jopp-logo{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  mask-image: url(../images/jopp.svg);
+  mask-size: 100% 100%;
+  transform: translate(-50%, -50%) rotate(var(--rotate-deg));
+  background: linear-gradient(calc(180deg - var(--rotate-deg)), var(--brand-color) 0, var(--brand-color) 50%, white 50%, white 50%);
+}
+.jopp-logo-text{
+  white-space: nowrap;
+  font-weight: bolder;
+  font-family: 'xsjOswald', sans-serif;
+}
+time{
+  font-family: 'xsjOswald', sans-serif;
+  font-size: .8em;
+}

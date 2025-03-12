@@ -1,0 +1,11 @@
+{
+  "author": "jopp",
+  "version": "0.0.1",
+  "name": "Simple Blue Frame",
+  "margin": {
+    "top": 30,
+    "right": 60,
+    "bottom": 60,
+    "left":60 
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "author": "jopp",
+  "name": "Just One Page PDF",
+  "regions": ["header", "footer"],
+  "margin": {
+    "top": 40,
+    "right": 0,
+    "bottom": 200,
+    "left": 0
+  }
+}

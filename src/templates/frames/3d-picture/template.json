@@ -1,0 +1,11 @@
+{
+  "author": "jopp",
+  "version": "0.0.1",
+  "name": "3D Picture Frame",
+  "margin": {
+    "top": 40,
+    "right": 40,
+    "bottom": 40,
+    "left":40 
+  }
+}

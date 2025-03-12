@@ -1,0 +1,10 @@
+[
+  {
+    "id": "87876112-197d-4d8b-88ea-1851733637e5",
+    "name": "default",
+    "remote": true,
+    "author": "jopp",
+    "preview": "templates/covers/default/back/index.html",
+    "url": "templates/covers/default/back/template.json"
+  }
+]

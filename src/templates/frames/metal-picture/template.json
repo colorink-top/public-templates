@@ -1,0 +1,11 @@
+{
+  "author": "jopp",
+  "version": "0.0.1",
+  "name": "Mental Picture Frame",
+  "margin": {
+    "top": 125,
+    "right": 125,
+    "bottom": 125,
+    "left":125 
+  }
+}
