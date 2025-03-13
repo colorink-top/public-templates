@@ -3,6 +3,19 @@
   --brand-color: #d93838;
   --rotate-deg: 45deg;
 }
+
+@font-face {
+  font-family: "xsjGideonRoman";
+  src:
+    url("../../../../fonts/GideonRoman-Regular.ttf");
+}
+
+@font-face {
+  font-family: "xsjOswald";
+  src:
+    url("../../../../fonts/GideonRoman-Regular.ttf");
+}
+
 *{
   box-sizing: border-box;
 }
