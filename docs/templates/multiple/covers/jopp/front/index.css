@@ -1,0 +1,54 @@
+html,body,.pdf-container{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+.jopp-front-cover {
+  page: jopp-front-cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.jopp-doc-title {
+  font-size: 2em;
+  margin: 0.67em 1cm;
+  font-weight: bold;
+  white-space: unset;
+  text-wrap: balance;
+}
+.jopp-doc-subtitle {
+  font-weight: bold;
+  margin: 0.83em 0;
+  font-size: 1.5em;
+}
+.jopp-doc-subtitle a {
+  font-family: "xsjOswald", sans-serif;
+}
+.jopp-doc-author {
+}
+
+.jopp-front-cover.jopp-cover.pdf-cover:before {
+    content: ' ';
+    position: absolute;
+    inset: 0;
+    background: url(./jopp-with-space.svg);
+    opacity: .2;
+    height: max(300VW, 300VH);
+    width: max(300VW, 300VH);
+    background-size: 100px;
+    transform: translate(-50%, -50%) rotate(25deg);
+    transform-origin: center;
+}

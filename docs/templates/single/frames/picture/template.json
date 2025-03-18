@@ -1,0 +1,13 @@
+{
+  "author": "jopp",
+  "version": "0.0.1",
+  "name": "Picture Frame",
+  "margin": {
+    "top": 100,
+    "right": 100,
+    "bottom": 250,
+    "left": 100
+  },
+  "template_version": 1,
+  "path": "https://colorink-top.github.io/public-templates/templates/single/frames/picture/template.json"
+}

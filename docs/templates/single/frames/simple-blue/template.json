@@ -1,0 +1,13 @@
+{
+  "author": "jopp",
+  "version": "0.0.1",
+  "name": "Simple Blue Frame",
+  "margin": {
+    "top": 30,
+    "right": 60,
+    "bottom": 60,
+    "left": 60
+  },
+  "template_version": 1,
+  "path": "https://colorink-top.github.io/public-templates/templates/single/frames/simple-blue/template.json"
+}
