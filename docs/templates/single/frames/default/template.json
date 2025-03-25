@@ -1,5 +1,6 @@
 {
   "author": "jopp",
+  "name": "Default",
   "regions": [
     "header",
     "footer"

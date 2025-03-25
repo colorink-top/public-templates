@@ -1,6 +1,24 @@
 [
   {
-    "id": "f4d3fa89-aa4d-49af-ab8a-91d91bf61b91",
+    "id": "system_bicycle",
+    "name": "Bicycle",
+    "remote": true,
+    "author": "jopp",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/covers/bicycle/back/",
+    "preview": "templates/multiple/covers/bicycle/back/index.html",
+    "path": "templates/multiple/covers/bicycle/back/template.json"
+  },
+  {
+    "id": "system_clean",
+    "name": "Clean",
+    "remote": true,
+    "author": "jopp",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/covers/clean/back/",
+    "preview": "templates/multiple/covers/clean/back/index.html",
+    "path": "templates/multiple/covers/clean/back/template.json"
+  },
+  {
+    "id": "system_default",
     "name": "Default",
     "remote": true,
     "author": "jopp",
@@ -9,12 +27,48 @@
     "path": "templates/multiple/covers/default/back/template.json"
   },
   {
-    "id": "6541f64e-d406-4e8c-ac4d-642d8afa506c",
+    "id": "system_jopp",
     "name": "Just One Page PDF",
     "remote": true,
     "author": "jopp",
     "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/covers/jopp/back/",
     "preview": "templates/multiple/covers/jopp/back/index.html",
     "path": "templates/multiple/covers/jopp/back/template.json"
+  },
+  {
+    "id": "system_leaf",
+    "name": "Leaf",
+    "remote": true,
+    "author": "jopp",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/covers/leaf/back/",
+    "preview": "templates/multiple/covers/leaf/back/index.html",
+    "path": "templates/multiple/covers/leaf/back/template.json"
+  },
+  {
+    "id": "system_mind",
+    "name": "Mind",
+    "remote": true,
+    "author": "jopp",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/covers/mind/back/",
+    "preview": "templates/multiple/covers/mind/back/index.html",
+    "path": "templates/multiple/covers/mind/back/template.json"
+  },
+  {
+    "id": "system_outdoors",
+    "name": "Outdoors",
+    "remote": true,
+    "author": "jopp",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/covers/outdoors/back/",
+    "preview": "templates/multiple/covers/outdoors/back/index.html",
+    "path": "templates/multiple/covers/outdoors/back/template.json"
+  },
+  {
+    "id": "system_sunset",
+    "name": "Sunset",
+    "remote": true,
+    "author": "jopp",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/covers/sunset/back/",
+    "preview": "templates/multiple/covers/sunset/back/index.html",
+    "path": "templates/multiple/covers/sunset/back/template.json"
   }
 ]

@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+html,body,.pdf-container{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.jopp-back-cover {
+  page: jopp-back-cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+
+.jopp-back-cover .jopp-doc-detail-table {
+  margin: 1cm;
+  color: #333;
+  background: white;
+  border: 1px solid grey;
+  font-size: 12pt;
+  border-collapse: collapse;
+  width: initial;
+}
+.jopp-back-cover .jopp-doc-detail-table thead th,
+.jopp-back-cover .jopp-doc-detail-table tfoot th {
+  color: #777;
+  background: rgba(0, 0, 0, 0.1);
+}
+.jopp-back-cover .jopp-doc-detail-table caption {
+  padding: 0.5em;
+}
+.jopp-back-cover .jopp-doc-detail-table th,
+.jopp-back-cover .jopp-doc-detail-table td {
+  padding: 0.5em;
+  border: 1px solid lightgrey;
+  word-break: break-all;
+}

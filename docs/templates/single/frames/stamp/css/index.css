@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: #af1f1f;
+}
+a {
+  text-decoration: none;
+  color: #af1f1f;
+}
+
+.stamp {
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border: 2px solid;
+  margin: 50px;
+  outline-offset: 2px;
+  outline: 2px dashed;
+  transform: rotate(45deg);
+  position: absolute;
+  right: min(10%, 20px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  width: 100%;
+  height: 100%;
+  background: #af1f1f2e;
+}
+
+.title {
+  flex: 1;
+  align-content: center;
+  margin: 20px;
+  overflow: hidden;
+  text-wrap-style: balance;
+}

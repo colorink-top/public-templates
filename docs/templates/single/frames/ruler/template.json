@@ -1,0 +1,13 @@
+{
+  "author": "jopp",
+  "version": "0.0.1",
+  "name": "Ruler",
+  "margin": {
+    "top": 40,
+    "right": 40,
+    "bottom": 40,
+    "left": 40
+  },
+  "template_version": 1,
+  "path": "https://colorink-top.github.io/public-templates/templates/single/frames/ruler/template.json"
+}

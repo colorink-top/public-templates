@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a href="https://www.colorink.top" class="page-link">www.colorink.top</a>
+    </div>
+    <div class="body"></div>
+    <div class="footer">
+      <div class="bubbles">
+      </div>
+      <div class="content">
+        <div>
+          <div class="title">
+            Just One Page PDF, an awesome web page to PDF tool.
+          </div>
+          <time class="date"
+            >3/12/2025, 1:54:36 PM</time
+          >
+        </div>
+        <div>
+          <div class="qrcode"></div>
+        </div>
+      </div>
+    </div>
+
+    <svg style="position: fixed; top: 100vh;">
+      <defs>
+        <filter id="blob">
+          <feGaussianBlur
+            in="SourceGraphic"
+            stdDeviation="10"
+            result="blur"
+          ></feGaussianBlur>
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="blob"
+          ></feColorMatrix>
+          <!--feComposite(in="SourceGraphic" in2="blob" operator="atop") //After reviewing this after years I can't remember why I added this but it isn't necessary for the blob effect-->
+        </filter>
+      </defs>
+    </svg>
+    <script src="./js/qrcode.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

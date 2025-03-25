@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+}
+html,body,.pdf-container{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #fed8c1;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.jopp-back-cover {
+  page: jopp-back-cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+
+.jopp-back-cover .jopp-doc-detail-table {
+  margin: 1cm;
+  color: #333;
+  background: #fed8c1;
+  border: 1px solid white;
+  font-size: 12pt;
+  border-collapse: collapse;
+  width: initial;
+}
+.jopp-back-cover .jopp-doc-detail-table thead th,
+.jopp-back-cover .jopp-doc-detail-table tfoot th {
+  color: white;
+  background: rgba(0, 0, 0, 0.1);
+}
+.jopp-back-cover .jopp-doc-detail-table caption {
+  padding: 0.5em;
+}
+.jopp-back-cover .jopp-doc-detail-table th,
+.jopp-back-cover .jopp-doc-detail-table td {
+  padding: 0.5em;
+  border: 1px solid white;
+  word-break: break-all;
+}
+
+
+
+
+.totalcontainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+}
+.container1 {
+  position: absolute;
+  inset: 0;
+}
+.container2 {
+  position: absolute;
+  inset: 0;
+}
+.layer-1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #fed8c1;
+}
+.layer-3 {
+  background: url("./imgs/lay3.svg")
+    no-repeat center center fixed;
+}
+.layer-4 {
+  background: url("./imgs/lay4.svg")
+    no-repeat center center fixed;
+}
+.layer-5 {
+  background: url("./imgs/lay5.svg")
+    no-repeat center center fixed;
+}
+.layer-6 {
+  background: url("./imgs/lay6.svg")
+    no-repeat center center fixed;
+}
+.layer-7 {
+  background: url("./imgs/lay7.svg")
+    no-repeat center center fixed;
+}
+.layer-8 {
+  background: url("./imgs/lay8.svg")
+    no-repeat center center fixed;
+}
+.laya-please {
+  position: absolute;
+  background-size: cover;
+  inset: 0;
+}
+

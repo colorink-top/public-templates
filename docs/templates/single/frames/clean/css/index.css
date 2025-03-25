@@ -1,0 +1,43 @@
+*{
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.hide {
+  display: none !important;
+}
+.header,
+.body,
+.footer {
+  width: 100%;
+}
+.body {
+  flex: 1;
+}
+.header,.footer{
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: bolder;
+  text-align: center;
+}
+.footer{
+  height: 40px;
+  align-content: end;
+}

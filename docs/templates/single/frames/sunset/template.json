@@ -1,0 +1,16 @@
+{
+  "author": "jopp",
+  "name": "Sunset",
+  "template_version": 1,
+  "path": "https://colorink-top.github.io/public-templates/templates/single/frames/sunset/template.json",
+  "regions": [
+    "header",
+    "footer"
+  ],
+  "margin": {
+    "top": 40,
+    "right": 0,
+    "bottom": 200,
+    "left": 0
+  }
+}

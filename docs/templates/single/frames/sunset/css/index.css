@@ -1,0 +1,100 @@
+*{
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.hide {
+  display: none !important;
+}
+.header,
+.body,
+.footer {
+  width: 100%;
+  position: relative;
+}
+
+.header{
+    background: #ef4335;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.body {
+  flex: 1;
+}
+
+.footer{
+  height: 400px;
+      mask: linear-gradient(0, #1c1919 100px, transparent);
+}
+
+.totalcontainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container1 {
+  position: absolute;
+  inset: 0;
+}
+.container2 {
+  position: absolute;
+  inset: 0;
+}
+.layer-1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #fed8c1;
+}
+
+.layer-2 {
+  background: url("../imgs/lay2.svg")
+    no-repeat center center fixed;
+}
+.layer-3 {
+  background: url("../imgs/lay3.svg")
+    no-repeat center center fixed;
+}
+.layer-4 {
+  background: url("../imgs/lay4.svg")
+    no-repeat center center fixed;
+}
+.layer-5 {
+  background: url("../imgs/lay5.svg")
+    no-repeat center center fixed;
+}
+.layer-6 {
+  background: url("../imgs/lay6.svg")
+    no-repeat center center fixed;
+}
+.layer-7 {
+  background: url("../imgs/lay7.svg")
+    no-repeat center center fixed;
+}
+.layer-8 {
+  background: url("../imgs/lay8.svg")
+    no-repeat center center fixed;
+}
+.laya-please {
+  position: absolute;
+  background-size: cover;
+  inset: 0;
+}

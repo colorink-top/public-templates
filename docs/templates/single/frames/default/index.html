@@ -25,22 +25,97 @@
         flex: 1;
       }
       .header {
-        min-height: 160px;
-        background: url(./wave.svg);
-        background-size: cover;
-        background-position: bottom;
+        height: 40px;
+        line-height: 40px;
+        background: black;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: white;
+      }
+      .header .colors {
+        position: absolute;
+        top: 0px;
+        left: 15px;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+      }
+      .header .colors .circle{
+        background: gray;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+      }
+      .header .colors .circle.red{
+        background: #ff5f56;
+      }
+      .header .colors .circle.yellow{
+        background: #ffbd2e;
+      }
+      .header .colors .circle.green{
+        background: #27c93f;
+      }
+      .header .page-link{
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-decoration: none;
       }
       .footer {
-        background: blue;
+        text-align: center;
+        color: black;
+        margin-top: 80px;
+      }
+      .footer .imgs{
+        display: inline-block;
+        position: relative;
+      }
+      .footer .imgs img{
+        width: 60px;
+        height: 60px;
+      }
+      .footer .imgs .logo{
+        position: absolute;
+        left: 0;
+        transform: translate(-20px, -40px) rotate(-30deg);
+        z-index: -1;
+      }
+      .footer .date,
+      .footer .producer{
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          margin: 0 20px;
+      }
+      .footer .producer-link{
+        text-decoration: none;
+        font-weight: bolder;
+        color: black;
       }
     </style>
-  <script src="../../libs/moment-with-locales.js"></script>
-  <script src="../../libs/nunjucks.js"></script>
   </head>
   <body>
-    <div class="header">a</div>
+    <div class="header">
+      <div class="colors">
+        <div class="red circle"></div>
+        <div class="yellow circle"></div>
+        <div class="green circle"></div>
+      </div>
+      <a class="page-link link" href="https://www.colorink.top">www.colorink.top</a>
+    </div>
     <div class="body"></div>
-    <div class="footer">b</div>
+    <div class="footer">
+      <div class="imgs">
+        <img class="author" src="./author.svg" alt="author">
+        <img class="logo" src="./logo.svg" alt="logo">
+      </div>
+      <div class="date">3/24/2025, 11:45:21 AM</div>
+      <div class="producer"><a class="link producer-link" href="https://chromewebstore.google.com/detail/iheblinfholjjelaobnglbbccblceief"> Created with Just One Page PDF</a></div>
+    </div>
     <script>
       const headerEl = document.querySelector(".header")
       const bodyEl = document.querySelector(".body")
@@ -51,11 +126,16 @@
           case "header": {
             bodyEl.classList.add('hide')
             footerEl.classList.add('hide')
+            const pageLinkEl = document.querySelector('.page-link')
+            pageLinkEl.innerText = documentInfo.hostname;
+            pageLinkEl.href = documentInfo.url
             break
           }
           case "footer": {
             headerEl.classList.add('hide')
             bodyEl.classList.add('hide')
+            const dateEl = document.querySelector('.date');
+            dateEl.innerText = new Date().toString();
             break
           }
         }

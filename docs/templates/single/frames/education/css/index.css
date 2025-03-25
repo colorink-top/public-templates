@@ -7,13 +7,13 @@
 @font-face {
   font-family: "xsjGideonRoman";
   src:
-    url("../../../../fonts/GideonRoman-Regular.ttf");
+    url("../../../../../fonts/GideonRoman-Regular.ttf");
 }
 
 @font-face {
   font-family: "xsjOswald";
   src:
-    url("../../../../fonts/Oswald-Bold.ttf");
+    url("../../../../../fonts/Oswald-Bold.ttf");
 }
 
 *{

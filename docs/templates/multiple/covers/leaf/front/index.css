@@ -1,0 +1,42 @@
+html,body,.pdf-container{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: #85C226;
+  background-image: url(../leaf-background.svg), url(../leaf-left-top.svg), url(../leaf-right-bottom.svg), radial-gradient(circle, white, #EDF6e5);
+  background-size: cover, auto, auto;
+  background-repeat: no-repeat;
+  background-position: center, left top, right bottom;
+  background-color: #EDF6E5;
+}
+
+a{
+  color: #85C226;
+  text-decoration: none;
+}
+.jopp-front-cover {
+  page: jopp-front-cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.jopp-doc-title {
+  font-size: 2em;
+  margin: 0.67em 1cm;
+  font-weight: bold;
+  white-space: unset;
+  text-wrap: balance;
+}
+.jopp-doc-subtitle {
+  font-weight: bold;
+  margin: 0.83em 0;
+  font-size: 1.5em;
+}

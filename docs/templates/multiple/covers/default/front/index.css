@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "xsjGideonRoman";
+  src:
+    url("../../../../../fonts/GideonRoman-Regular.ttf");
+}
+
+@font-face {
+  font-family: "xsjOswald";
+  src:
+    url("../../../../../fonts/Oswald-Bold.ttf");
+}
+
+
 html,body,.pdf-container{
   width: 100%;
   height: 100%;
