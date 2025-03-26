@@ -15,10 +15,12 @@
         display: flex;
         flex-direction: column;
       }
-      .hide{
-        display: none!important;
+      .hide {
+        display: none !important;
       }
-      .header, .body, .footer{
+      .header,
+      .body,
+      .footer {
         width: 100%;
       }
       .body {
@@ -44,22 +46,22 @@
         align-items: center;
         column-gap: 10px;
       }
-      .header .colors .circle{
+      .header .colors .circle {
         background: gray;
         width: 15px;
         height: 15px;
         border-radius: 50%;
       }
-      .header .colors .circle.red{
+      .header .colors .circle.red {
         background: #ff5f56;
       }
-      .header .colors .circle.yellow{
+      .header .colors .circle.yellow {
         background: #ffbd2e;
       }
-      .header .colors .circle.green{
+      .header .colors .circle.green {
         background: #27c93f;
       }
-      .header .page-link{
+      .header .page-link {
         color: white;
         font-weight: bolder;
         text-transform: uppercase;
@@ -70,28 +72,28 @@
         color: black;
         margin-top: 80px;
       }
-      .footer .imgs{
+      .footer .imgs {
         display: inline-block;
         position: relative;
       }
-      .footer .imgs img{
+      .footer .imgs img {
         width: 60px;
         height: 60px;
       }
-      .footer .imgs .logo{
+      .footer .imgs .logo {
         position: absolute;
         left: 0;
         transform: translate(-20px, -40px) rotate(-30deg);
         z-index: -1;
       }
       .footer .date,
-      .footer .producer{
-          overflow: hidden;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          margin: 0 20px;
+      .footer .producer {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 0 20px;
       }
-      .footer .producer-link{
+      .footer .producer-link {
         text-decoration: none;
         font-weight: bolder;
         color: black;
@@ -105,38 +107,47 @@
         <div class="yellow circle"></div>
         <div class="green circle"></div>
       </div>
-      <a class="page-link link" href="https://www.colorink.top">www.colorink.top</a>
+      <a class="page-link link" href="https://www.colorink.top"
+        >www.colorink.top</a
+      >
     </div>
     <div class="body"></div>
     <div class="footer">
       <div class="imgs">
-        <img class="author" src="./author.svg" alt="author">
-        <img class="logo" src="./logo.svg" alt="logo">
+        <img class="author" src="./author.svg" alt="author" />
+        <img class="logo" src="./logo.svg" alt="logo" />
       </div>
       <div class="date">3/24/2025, 11:45:21 AM</div>
-      <div class="producer"><a class="link producer-link" href="https://chromewebstore.google.com/detail/iheblinfholjjelaobnglbbccblceief"> Created with Just One Page PDF</a></div>
+      <div class="producer">
+        <a
+          class="link producer-link"
+          href="https://chromewebstore.google.com/detail/iheblinfholjjelaobnglbbccblceief"
+        >
+          Created with Just One Page PDF</a
+        >
+      </div>
     </div>
     <script>
-      const headerEl = document.querySelector(".header")
-      const bodyEl = document.querySelector(".body")
-      const footerEl = document.querySelector(".footer")
+      const headerEl = document.querySelector(".header");
+      const bodyEl = document.querySelector(".body");
+      const footerEl = document.querySelector(".footer");
       window.joppInit = async function (opts) {
-        const {templateInfo, documentInfo, pdfInfo} = opts;
-        switch(templateInfo.region) {
+        const { templateInfo, documentInfo, pdfInfo } = opts;
+        switch (templateInfo.region) {
           case "header": {
-            bodyEl.classList.add('hide')
-            footerEl.classList.add('hide')
-            const pageLinkEl = document.querySelector('.page-link')
+            bodyEl.classList.add("hide");
+            footerEl.classList.add("hide");
+            const pageLinkEl = document.querySelector(".page-link");
             pageLinkEl.innerText = documentInfo.hostname;
-            pageLinkEl.href = documentInfo.url
-            break
+            pageLinkEl.href = documentInfo.url;
+            break;
           }
           case "footer": {
-            headerEl.classList.add('hide')
-            bodyEl.classList.add('hide')
-            const dateEl = document.querySelector('.date');
+            headerEl.classList.add("hide");
+            bodyEl.classList.add("hide");
+            const dateEl = document.querySelector(".date");
             dateEl.innerText = new Date().toString();
-            break
+            break;
           }
         }
       };

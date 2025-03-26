@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+}
+html {
+  overflow: hidden;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body:before{
+  position: absolute;
+  content: ' ';
+  inset: 0;
+  background: url(./jopp-with-space.svg);
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: max(300VW, 300VH);
+  height: max(300VW, 300VH);
+  opacity: .3;
+}
+

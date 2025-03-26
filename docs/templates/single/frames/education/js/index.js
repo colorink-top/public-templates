@@ -10,7 +10,7 @@ window.joppInit = async function (opts) {
     case "header": {
       bodyEl.classList.add("hide");
       footerEl.classList.add("hide");
-      const linkEl = headerEl.querySelector('.page-link')
+      const linkEl = headerEl.querySelector(".page-link");
       linkEl.innerText = documentInfo.hostname.toUpperCase();
       linkEl.href = documentInfo.url;
       break;
@@ -18,10 +18,10 @@ window.joppInit = async function (opts) {
     case "footer": {
       headerEl.classList.add("hide");
       bodyEl.classList.add("hide");
-      const timeEl = document.querySelector('.footer time')
-      timeEl.setAttribute('datetime', saveDate.toISOString())
+      const timeEl = document.querySelector(".footer time");
+      timeEl.setAttribute("datetime", saveDate.toISOString());
       timeEl.innerText = saveDate.toLocaleString();
-      const footerLinkEl = footerEl.querySelector('.jopp-footer-title>a')
+      const footerLinkEl = footerEl.querySelector(".jopp-footer-title>a");
       footerLinkEl.href = documentInfo.url;
       footerLinkEl.innerText = documentInfo.title;
       break;

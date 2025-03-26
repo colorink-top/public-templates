@@ -1,14 +1,5 @@
 [
   {
-    "id": "system_jopp-3d-picture",
-    "name": "3D Picture Frame",
-    "remote": true,
-    "author": "xsj",
-    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/single/frames/3d-picture/",
-    "preview": "templates/single/frames/3d-picture/index.html",
-    "path": "templates/single/frames/3d-picture/template.json"
-  },
-  {
     "id": "system_jopp-bubbles",
     "name": "Bubbles",
     "remote": true,
@@ -52,15 +43,6 @@
     "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/single/frames/jopp/",
     "preview": "templates/single/frames/jopp/index.html",
     "path": "templates/single/frames/jopp/template.json"
-  },
-  {
-    "id": "system_jopp-metal-picture",
-    "name": "Mental Picture Frame",
-    "remote": true,
-    "author": "xsj",
-    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/single/frames/metal-picture/",
-    "preview": "templates/single/frames/metal-picture/index.html",
-    "path": "templates/single/frames/metal-picture/template.json"
   },
   {
     "id": "system_jopp-picture",
@@ -127,7 +109,7 @@
   },
   {
     "id": "system_jopp-frames-designer",
-    "name": "Chrome Classic",
+    "name": "Frame Designers",
     "remote": true,
     "author": "xsj",
     "supportConfig": true,

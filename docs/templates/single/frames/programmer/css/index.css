@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 html {
@@ -32,7 +32,8 @@ body {
 .body {
   flex: 1;
 }
-.header,.footer{
+.header,
+.footer {
   text-transform: uppercase;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -44,12 +45,12 @@ body {
   background: #607d8b;
   line-height: 40px;
 }
-.footer{
+.footer {
   height: 300px;
   align-content: end;
 }
 
-.footer .programmer{
+.footer .programmer {
   height: 200px;
   position: absolute;
   bottom: 40px;
@@ -59,7 +60,7 @@ body {
   mask: linear-gradient(0, #1c1919 60px, transparent);
 }
 
-.footer .details{
+.footer .details {
   height: 80px;
   background: #607d8b;
   color: white;

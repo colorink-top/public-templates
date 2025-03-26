@@ -9,19 +9,20 @@ body {
   margin: 0;
   padding: 0;
 }
-.ruler-container{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 40px auto 40px;
-    grid-template-rows: 40px auto 40px;
+.ruler-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  grid-template-rows: 40px auto 40px;
 }
 
-.ruler{
+.ruler {
   position: relative;
   background: rgba(255, 255, 255, 1);
   color: #444;
-  font-family: source code pro, "Arial Narrow", "Helvetica Neue", Helvetica, Arial, Veranda, sans-serif;
+  font-family: source code pro, "Arial Narrow", "Helvetica Neue", Helvetica,
+    Arial, Veranda, sans-serif;
   font-size: 12px;
   line-height: 14px;
   overflow: hidden;
@@ -31,26 +32,24 @@ body {
   background: #444;
 }
 
-.corner{
+.corner {
 }
 
-
-
 .h-ruler .tick {
-    position: absolute;
-    width: 1px;
+  position: absolute;
+  width: 1px;
 }
 
 .h-ruler .tick-minor {
-    height: 4px;
+  height: 4px;
 }
 .h-ruler .tick-major {
-    height: 6px;
+  height: 6px;
 }
 .h-ruler .tick-label {
-    height: 100%;
-    text-indent: 1px;
-    writing-mode: vertical-lr;
+  height: 100%;
+  text-indent: 1px;
+  writing-mode: vertical-lr;
 }
 
 .v-ruler .tick {
@@ -59,57 +58,50 @@ body {
 }
 
 .v-ruler .tick-minor {
-    width: 4px;
+  width: 4px;
 }
 .v-ruler .tick-major {
-    width: 6px;
+  width: 6px;
 }
 .v-ruler .tick-label {
-    width: 100%;
-    text-indent: 1px;
+  width: 100%;
+  text-indent: 1px;
 }
 
-
-
-
-
-
-.top-ruler{
+.top-ruler {
   border-bottom: 1px solid;
 }
 
-.top-ruler .tick{
+.top-ruler .tick {
   bottom: 0;
 }
 
-
-.right-ruler{
+.right-ruler {
   border-left: 1px solid;
 }
-.right-ruler .tick{
+.right-ruler .tick {
   left: 0;
 }
 .right-ruler .tick-label {
   text-align: right;
 }
 
-
-.bottom-ruler{
+.bottom-ruler {
   border-top: 1px solid;
 }
 
-.bottom-ruler .tick{
+.bottom-ruler .tick {
   top: 0;
 }
 
 .bottom-ruler .tick-label {
-    text-align: right;
+  text-align: right;
 }
 
-.left-ruler{
+.left-ruler {
   border-right: 1px solid;
 }
-.left-ruler .tick{
+.left-ruler .tick {
   right: 0px;
 }
 .left-ruler .tick-label {

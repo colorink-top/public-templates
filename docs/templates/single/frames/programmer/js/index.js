@@ -12,14 +12,14 @@ window.joppInit = async function (opts) {
   switch (templateInfo.region) {
     case "header": {
       headerEl.classList.remove("hide");
-      const linkEl = headerEl.querySelector('.page-link')
+      const linkEl = headerEl.querySelector(".page-link");
       linkEl.innerText = documentInfo.hostname;
       linkEl.href = documentInfo.url;
       break;
     }
     case "footer": {
       footerEl.classList.remove("hide");
-      const timeEl = document.querySelector('.footer time')
+      const timeEl = document.querySelector(".footer time");
       timeEl.innerText = saveDate.toLocaleString();
       break;
     }

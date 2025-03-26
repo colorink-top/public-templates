@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-  <style>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
       * {
         box-sizing: border-box;
       }
@@ -19,47 +19,91 @@
         position: relative;
         display: flex;
       }
-.background {
-  position: absolute;
-  border-width: 60px;
-  border-style: solid;
-  border-color: #e6e6e6;
-  inset: 0;
-}
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .background {
+        position: absolute;
+        border-width: 60px;
+        border-style: solid;
+        border-color: #e6e6e6;
+        inset: 0;
+      }
 
-.corners { 
-  flex: 1;
-  margin: 60px;
-  position: relative;
-  box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
-}
+      .corners {
+        flex: 1;
+        margin: 60px;
+        position: relative;
+        box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
+      }
 
-/* Corner Effect */
-.corners:after,
-.corners:before {
-  background: #e6e6e6;
-  content: '';
-  height: 50px;
-  position: absolute;
-  top: -25px;
-  width: 100px;
-  box-shadow: 0 5px 10px -7px hsla(0, 0% ,0%, 0.5);
-}
-.corners:after {
-  left: -50px;
-  transform: rotate(-45deg);
-}
-.corners:before {
-  right: -50px;
-  transform: rotate(45deg);
-}
-  </style>
+      /* Corner Effect */
+      .corners:after,
+      .corners:before {
+        background: #e6e6e6;
+        content: "";
+        height: 50px;
+        position: absolute;
+        top: -25px;
+        width: 100px;
+        box-shadow: 0 5px 10px -7px hsla(0, 0%, 0%, 0.5);
+      }
+      .corners:after {
+        left: -50px;
+        transform: rotate(-45deg);
+      }
+      .corners:before {
+        right: -50px;
+        transform: rotate(45deg);
+      }
 
+      .header {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 0 150px;
+      }
 
-</head>
-<body>
-  <div class="background"></div>
-  <div class="corners">
-  </div>
-</body>
+      .footer {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="corners"></div>
+    <div class="header">
+      <a href="https://www.colorink.top" class="page-link">www.colorink.top</a>
+    </div>
+    <div class="footer">
+      <div class="date">3/26/2025, 10:24:21 AM</div>
+    </div>
+    <script>
+      window.joppInit = (initOpts) => {
+        const { documentInfo } = initOpts;
+        const { url, hostname, title } = documentInfo;
+        const linkEl = document.querySelector(".page-link");
+        linkEl.innerText = hostname;
+        linkEl.href = url;
+        const dateEl = document.querySelector(".date");
+        dateEl.innerText = new Date().toLocaleString();
+      };
+    </script>
+  </body>
 </html>

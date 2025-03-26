@@ -19,11 +19,18 @@ html,body,.pdf-container{
   box-sizing: border-box;
 }
 
+html {
+  background-color: #d51515;
+  background-image: url(./waves.svg), radial-gradient(closest-side, #d93838, transparent);
+  background-size: 80px, auto;
+}
+
 body{
   overflow: hidden;
 }
 
 a{
+  color: black;
   text-decoration: none;
 }
 .jopp-front-cover {
@@ -51,17 +58,4 @@ a{
   font-family: "xsjOswald", sans-serif;
 }
 .jopp-doc-author {
-}
-
-.jopp-front-cover.jopp-cover.pdf-cover:before {
-    content: ' ';
-    position: absolute;
-    inset: 0;
-    background: url(./jopp-with-space.svg);
-    opacity: .2;
-    height: max(300VW, 300VH);
-    width: max(300VW, 300VH);
-    background-size: 100px;
-    transform: translate(-50%, -50%) rotate(25deg);
-    transform-origin: center;
 }
