@@ -19,9 +19,9 @@ html,body,.pdf-container{
   box-sizing: border-box;
 }
 
-html {
+body {
   background-color: #d51515;
-  background-image: url(./waves.svg), radial-gradient(closest-side, #d93838, transparent);
+  background-image: url(./waves.svg), radial-gradient(closest-side, #d93838, #d9383800);
   background-size: 80px, auto;
 }
 
