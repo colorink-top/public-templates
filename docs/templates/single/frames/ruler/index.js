@@ -50,13 +50,26 @@ const initRulerFn = () => {
 
 initRulerFn();
 window.onresize = initRulerFn;
+window.initRulerFn = initRulerFn;
 
 window.joppInit = (initOpts) => {
   window.onresize = null;
   const { pdfInfo } = initOpts;
 
   const rulerContainerEl = document.querySelector(".ruler-container");
-  rulerContainerEl.style.width = pdfInfo.width + "px";
-  rulerContainerEl.style.height = pdfInfo.height + "px";
-  initRulerFn();
+  rulerContainerEl.remove();
+  return new Promise((resolve, reject)=>{
+    const iframeEl = document.createElement('iframe');
+    iframeEl.style.width = pdfInfo.width + "px";
+    iframeEl.style.height = pdfInfo.height + "px";
+    iframeEl.src = document.location.href;
+    document.body.append(iframeEl)
+    iframeEl.onload = ()=>{
+      const win = iframeEl.contentWindow;
+      const doc = iframeEl.contentDocument;
+      win.initRulerFn();
+      resolve();
+    }
+  })
+  //initRulerFn();
 };
