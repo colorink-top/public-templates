@@ -1,0 +1,16 @@
+{
+  "author": "jopp",
+  "name": "Autumn",
+  "template_version": 1,
+  "path": "https://colorink-top.github.io/public-templates/templates/single/frames/autumn/template.json",
+  "regions": [
+    "header",
+    "footer"
+  ],
+  "margin": {
+    "top": 40,
+    "right": 0,
+    "bottom": 40,
+    "left": 0
+  }
+}

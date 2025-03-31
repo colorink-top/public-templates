@@ -1,5 +1,14 @@
 [
   {
+    "id": "system_jopp-autumn",
+    "name": "Autumn",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/single/frames/autumn/",
+    "preview": "templates/single/frames/autumn/index.html",
+    "path": "templates/single/frames/autumn/template.json"
+  },
+  {
     "id": "system_jopp-bubbles",
     "name": "Bubbles",
     "remote": true,
