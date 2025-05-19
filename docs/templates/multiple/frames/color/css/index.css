@@ -1,0 +1,102 @@
+:root{
+  --width: 8.3in;
+  --height: 11.7in;
+  --marginTop: 60px;
+  --marginRight: 60px;
+  --marginBottom: 60px;
+  --marginLeft: 60px;
+  --background: #0099ff;
+  --fontColor: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,body{
+  margin: 0;
+  padding: 0;
+  color: var(--fontColor);
+}
+html.preview, .preview body{
+  height: 100%;
+}
+
+a{
+  color: var(--fontColor);
+  text-decoration: none;
+}
+
+.template{
+  display: none;
+  width: var(--width);
+  height: 100%;
+  border: 1px solid var(--background);
+  flex-direction: column;
+}
+.preview .template {
+  display: flex;
+}
+
+.page-container{
+  display: flex;
+  flex-direction: column;
+  width: var(--width);
+  height: var(--height);
+}
+
+.header{
+  text-align: left;
+  height: calc(var(--marginTop) - 10px);
+  display: flex;
+  align-items: center;
+  padding: 5px var(--marginRight) 5px var(--marginLeft);
+  margin: 0;
+  color: var(--fontColor);
+  background: var(--background);
+}
+
+.single-line-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content{
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  height: calc(var(--marginBottom) - 10px);
+  padding: 5px var(--marginRight) 5px var(--marginLeft);
+  justify-content: space-between;
+  margin: 0;
+  column-gap: 30px;
+  position: relative;
+  color: var(--fontColor);
+  background: var(--background);
+}
+.footer .created-with{
+  position: absolute;
+  bottom: 0;
+  font-size: xx-small;
+  opacity: .5;
+}
+.footer .created-with a{
+  font-size: xx-small;
+}
+
+.footer .hostname{
+}
+
+.footer .page-num{
+  align-self: center;
+}
+
+@media print{
+  @page{
+    margin: 0;
+    size: var(--width) var(--height);
+  }
+}

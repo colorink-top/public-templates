@@ -1,0 +1,93 @@
+[
+  {
+    "id": "system_jopp-autumn",
+    "name": "Autumn",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/frames/autumn/",
+    "preview": "templates/multiple/frames/autumn/index.html",
+    "path": "templates/multiple/frames/autumn/template.json"
+  },
+  {
+    "id": "system_jopp-banner",
+    "name": "Banner",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/frames/banner/",
+    "preview": "templates/multiple/frames/banner/index.html",
+    "path": "templates/multiple/frames/banner/template.json"
+  },
+  {
+    "id": "system_jopp-city-stamp",
+    "name": "City Stamp",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/frames/city-stamp/",
+    "preview": "templates/multiple/frames/city-stamp/index.html",
+    "path": "templates/multiple/frames/city-stamp/template.json",
+    "supportConfig": true
+  },
+  {
+    "id": "system_jopp-clean",
+    "name": "Clean",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/frames/clean/",
+    "preview": "templates/multiple/frames/clean/index.html",
+    "path": "templates/multiple/frames/clean/template.json"
+  },
+  {
+    "id": "system_jopp-color",
+    "name": "Simple Color",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/frames/color/",
+    "preview": "templates/multiple/frames/color/index.html",
+    "path": "templates/multiple/frames/color/template.json"
+  },
+  {
+    "id": "system_jopp-default",
+    "name": "Default",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/frames/default/",
+    "preview": "templates/multiple/frames/default/index.html",
+    "path": "templates/multiple/frames/default/template.json"
+  },
+  {
+    "id": "system_jopp-jopp",
+    "name": "Just One Page PDF",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/frames/jopp/",
+    "preview": "templates/multiple/frames/jopp/index.html",
+    "path": "templates/multiple/frames/jopp/template.json"
+  },
+  {
+    "id": "system_jopp-map",
+    "name": "Map",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/frames/map/",
+    "preview": "templates/multiple/frames/map/index.html",
+    "path": "templates/multiple/frames/map/template.json"
+  },
+  {
+    "id": "system_jopp-mind",
+    "name": "Mind",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/frames/mind/",
+    "preview": "templates/multiple/frames/mind/index.html",
+    "path": "templates/multiple/frames/mind/template.json"
+  },
+  {
+    "id": "system_jopp-stamp",
+    "name": "Stamp",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/frames/stamp/",
+    "preview": "templates/multiple/frames/stamp/index.html",
+    "path": "templates/multiple/frames/stamp/template.json"
+  }
+]

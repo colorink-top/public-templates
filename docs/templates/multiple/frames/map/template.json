@@ -1,0 +1,13 @@
+{
+  "author": "jopp",
+  "type": "multiplePageFrames",
+  "name": "Map",
+  "template_version": 1,
+  "margin": {
+    "top": 60,
+    "right": 60,
+    "bottom": 60,
+    "left": 60
+  },
+  "path": "https://colorink-top.github.io/public-templates/templates/multiple/frames/map/template.json"
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "system_jopp-color",
+    "name": "Simple Color",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/tocs/color/",
+    "preview": "templates/multiple/tocs/color/index.html",
+    "path": "templates/multiple/tocs/color/template.json"
+  },
+  {
+    "id": "system_jopp-default",
+    "name": "Default",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/tocs/default/",
+    "preview": "templates/multiple/tocs/default/index.html",
+    "path": "templates/multiple/tocs/default/template.json"
+  },
+  {
+    "id": "system_jopp-jopp",
+    "name": "Just One Page PDF",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/tocs/jopp/",
+    "preview": "templates/multiple/tocs/jopp/index.html",
+    "path": "templates/multiple/tocs/jopp/template.json"
+  }
+]

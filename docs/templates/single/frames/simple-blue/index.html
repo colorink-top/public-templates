@@ -28,8 +28,7 @@
 
       .background {
         position: absolute;
-        border-width: 64px;
-        border-top-width: 34px;
+        border-width: 62px;
         border-style: solid;
         border-color: #0099ff;
         inset: 0;
@@ -39,47 +38,59 @@
         height: 100%;
         box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
           0 5px 15px 0 rgba(0, 0, 0, 0.08);
-        margin: 30px 60px 60px;
+        margin: 60px;
         position: relative;
         border-radius: 8px;
-        border: 4px solid white;
+        border: 5px solid white;
       }
 
       .header {
         position: absolute;
-        top: 10px;
-        left: 60px;
+        bottom: calc(100% + 10px);
+        left: 0px;
+        right: 0px;
         text-transform: uppercase;
         font-weight: bolder;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .details {
         position: absolute;
-        right: 60px;
-        bottom: 10px;
+        right: 0px;
+        left: 0px;
+        top: calc(100% + 10px);
         text-align: right;
         line-height: 1.5;
       }
       .details .title {
         font-weight: bolder;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .details .date {
         font-size: 0.8em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     </style>
   </head>
   <body>
     <div class="background"></div>
-    <div class="frame"></div>
-    <div class="header">
-      <a href="https://www.colorink.top" class="page-link">www.colorink.top</a>
-    </div>
-    <div class="details">
-      <div class="title">
-        <a href="https://www.colorink.top"
-          >Just One Page PDF (an awesome web page to PDF tool)</a
-        >
+    <div class="frame">
+      <div class="header">
+        <a href="https://www.colorink.top" class="page-link">www.colorink.top</a>
       </div>
-      <div class="date">3/26/2025, 10:24:21 AM</div>
+      <div class="details">
+        <div class="title">
+          <a href="https://www.colorink.top"
+            >Just One Page PDF (an awesome web page to PDF tool)</a
+          >
+        </div>
+        <div class="date">3/26/2025, 10:24:21 AM</div>
+      </div>
     </div>
     <script>
       window.joppInit = (initOpts) => {

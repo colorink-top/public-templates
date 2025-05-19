@@ -1,0 +1,81 @@
+:root {
+  --fontColor: #0099ff;
+}
+html,
+body,
+.pdf-container {
+  width: initial;
+  height: initial;
+}
+.toc-container {
+  line-height: 1;
+  color: var(--fontColor);
+}
+.jopp-toc-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+.jopp-toc-title:before {
+  content: 'table of contents';
+}
+
+div.jopp-toc-item-text {
+  border-bottom: 1px dotted;
+  clear: both;
+  white-space: break-spaces;
+}
+
+span {
+  float: right;
+}
+li {
+  list-style: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+ul {
+  font-size: 14px;
+  font-weight: bold;
+}
+ul {
+  padding-left: 0em;
+}
+ul ul {
+  padding-left: 1em;
+  font-weight: normal;
+}
+div.jopp-toc-item-text,
+a {
+  text-decoration: none;
+  color: var(--fontColor);
+}
+div.jopp-toc-item-text > a:after {
+  content: "　　";
+}
+
+ul ul {
+  counter-reset: section;
+  list-style-type: none;
+}
+ul ul > li > div.jopp-toc-item-text:before {
+  counter-increment: section;
+  content: counters(section, ".") " ";
+  content: "";
+}
+.jopp-toc-item-page:before {
+  content: "  ";
+}
+
+.jopp-toc-content > ul {
+  counter-reset: sectioncjk;
+  list-style-type: none;
+}
+.jopp-toc-content > ul > li > div.jopp-toc-item-text:before {
+  counter-increment: sectioncjk;
+  content: counters(sectioncjk, ".", upper-roman) " ";
+  content: "";
+}
