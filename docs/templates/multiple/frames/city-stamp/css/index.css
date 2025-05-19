@@ -100,7 +100,7 @@ a{
 }
 
 .stamp {
-    max-width: 300px;
+    max-width: 150px;
 }
 
 @media print{

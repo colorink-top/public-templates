@@ -9,5 +9,5 @@ export const initPreviewCssFn =  ()=>{
   `
   document.head.append(styleEl);
   document.body.classList.add('jopp-preview')
-  document.documentElement.style.setProperty('--height', '500px')
+  document.body.style.setProperty('--height', '500px', 'important')
 }
