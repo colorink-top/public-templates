@@ -10,6 +10,11 @@
     url("../../../../../fonts/Oswald-Bold.ttf");
 }
 
+:root{
+  --brand-color-dark: #d51515;
+  --brand-color: #d93838;
+}
+
 
 html,body,.pdf-container{
   width: 100%;
@@ -20,8 +25,8 @@ html,body,.pdf-container{
 }
 
 body {
-  background-color: #d51515;
-  background-image: url(./waves.svg), radial-gradient(closest-side, #d93838, #d9383800);
+  background-color: var(--brand-color-dark);
+  background-image: url(./waves.svg), radial-gradient(farthest-corner, var(--brand-color-dark), var(--brand-color));
   background-size: 80px, auto;
 }
 
