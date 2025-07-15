@@ -99,8 +99,8 @@ function initGUI(){
   gui.add(optionsParams, 'letter').onChange(applyJoppInit)
   gui.add(optionsParams, 'selectFont');
   const fontFamilyController = gui.add(optionsParams, 'fontFamily').onChange(applyJoppInit)
-  gui.add(optionsParams, 'fontSize', 5, 50).onChange(applyJoppInit)
-  gui.add(optionsParams, 'letterSpacing', 0, 50).onChange(applyJoppInit)
+  gui.add(optionsParams, 'fontSize', 5, 500).onChange(applyJoppInit)
+  gui.add(optionsParams, 'letterSpacing', 0, 100).onChange(applyJoppInit)
   gui.add(optionsParams, 'opacity', 0, 1).onChange(applyJoppInit);
   gui.addColor(optionsParams, 'color').onChange(applyJoppInit);
   gui.add(optionsParams, 'angle', 0, 360).onChange(applyJoppInit)

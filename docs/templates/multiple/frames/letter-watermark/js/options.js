@@ -4,7 +4,7 @@ const STORAGEKEY = 'letter-watermark-storage-key'
 export const defaultWatermarkOptions = {
   letter: 'Just One Page PDF',
   fontFamily: 'serif',
-  fontSize: 14,
+  fontSize: 50,
   letterSpacing: 0,
   opacity: .3,
   color: 'black',
