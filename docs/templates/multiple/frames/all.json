@@ -64,6 +64,16 @@
     "path": "templates/multiple/frames/jopp/template.json"
   },
   {
+    "id": "system_jopp-letter-watermark",
+    "name": "Letter Watermark",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/frames/letter-watermark/",
+    "preview": "templates/multiple/frames/letter-watermark/index.html",
+    "path": "templates/multiple/frames/letter-watermark/template.json",
+    "supportConfig": true
+  },
+  {
     "id": "system_jopp-map",
     "name": "Map",
     "remote": true,

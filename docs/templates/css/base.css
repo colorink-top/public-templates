@@ -1,3 +1,3 @@
-html > *:not(head):not(body) {
+html > *:not(head):not(body):not(dialog) {
   display: none;
 }
