@@ -6,6 +6,9 @@ export const initPreviewCssFn =  ()=>{
    outline: 2px solid;
    outline-offset: -3px;
   }
+  .lil-gui.root{
+    --width: 300px;
+  }
   `
   document.head.append(styleEl);
   document.body.classList.add('jopp-preview')
