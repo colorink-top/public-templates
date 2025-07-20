@@ -1,0 +1,14 @@
+{
+  "author": "jopp",
+  "type": "multiplePageFrames",
+  "name": "Image Watermark",
+  "template_version": 1,
+  "margin": {
+    "top": 60,
+    "right": 60,
+    "bottom": 60,
+    "left": 60
+  },
+  "supportConfig": true,
+  "path": "https://colorink-top.github.io/public-templates/templates/multiple/frames/image-watermark/template.json"
+}

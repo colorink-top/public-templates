@@ -5,13 +5,10 @@
   --marginRight: 60px;
   --marginBottom: 60px;
   --marginLeft: 60px;
-  --watermarkFontFamily: 'serif';
-  --watermarkFontSize: 20px;
-  --watermarkLetterSpacing: 0px;
+  --watermarkSize: 100px;
   --watermarkOpacity: .3;
-  --watermarkColor: black;
-  --watermarkX: 50%;
-  --watermarkY: -30px;
+  --watermarkX: 0;
+  --watermarkY: 0;
   --watermarkAngle: 0deg;
 }
 
@@ -41,6 +38,8 @@ a{
 }
 .preview .template {
   display: flex;
+  overflow: hidden;
+  position: relative;
 }
 
 .page-container{
@@ -106,18 +105,14 @@ a{
   justify-content: center;
 }
 
-.letter-watermark{
+.image-watermark{
   position: relative;
-  z-index: 1;
-  font-family: var(--watermarkFontFamily), serif;
-  font-size: var(--watermarkFontSize, 20px);
-  letter-spacing: var(--watermarkLetterSpacing, 0px);
+  width: var(--watermarkSize, 'auto');
   opacity: var(--watermarkOpacity);
-  color: var(--watermarkColor);
   left: var(--watermarkX, 0);
   top: var(--watermarkY, 0);
   transform: rotate(var(--watermarkAngle, 0deg));
-  white-space: nowrap;
+  z-index: 1;
 }
 
 @media print{

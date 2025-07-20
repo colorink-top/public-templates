@@ -55,6 +55,16 @@
     "path": "templates/multiple/frames/default/template.json"
   },
   {
+    "id": "system_jopp-image-watermark",
+    "name": "Image Watermark",
+    "remote": true,
+    "author": "xsj",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/frames/image-watermark/",
+    "preview": "templates/multiple/frames/image-watermark/index.html",
+    "path": "templates/multiple/frames/image-watermark/template.json",
+    "supportConfig": true
+  },
+  {
     "id": "system_jopp-jopp",
     "name": "Just One Page PDF",
     "remote": true,
