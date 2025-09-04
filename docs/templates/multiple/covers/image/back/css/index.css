@@ -1,3 +1,6 @@
+:root{
+  --color: black;
+}
 *{
   box-sizing: border-box;
 }
@@ -8,16 +11,24 @@ html,body,.pdf-container{
   padding: 0;
 }
 
-body{
-  background: url(../mind.svg);
-  background-size: cover;
-  background-position: bottom center;
-}
-
 a{
-  color: black;
+  color: var(--color);
   text-decoration: none;
 }
+
+.cover-container {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.image-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 .jopp-back-cover {
   page: jopp-back-cover;
@@ -30,18 +41,19 @@ a{
 
 .jopp-back-cover .jopp-doc-detail-table {
   margin: 1cm;
-  color: #333;
+  color: var(--color);
   background: transparent;
-  border: 1px solid grey;
+  border: 3px solid var(--color);
   font-size: 12pt;
+  font-weight: bolder;
   border-collapse: collapse;
   width: initial;
   mix-blend-mode: multiply;
 }
 .jopp-back-cover .jopp-doc-detail-table thead th,
 .jopp-back-cover .jopp-doc-detail-table tfoot th {
-  color: #777;
-  background: rgba(0, 0, 0, 0.1);
+  color: var(--color);
+  background: opacity;
 }
 .jopp-back-cover .jopp-doc-detail-table caption {
   padding: 0.5em;
@@ -49,6 +61,17 @@ a{
 .jopp-back-cover .jopp-doc-detail-table th,
 .jopp-back-cover .jopp-doc-detail-table td {
   padding: 0.5em;
-  border: 1px solid lightgrey;
+  border: 3px solid var(--color);
   word-break: break-all;
+}
+
+
+.stroke-text{
+    color: white;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 0.2em var(--color);
+}
+
+.stroke-text a{
+  color: white
 }

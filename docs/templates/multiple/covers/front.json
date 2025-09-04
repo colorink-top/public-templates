@@ -27,6 +27,16 @@
     "path": "templates/multiple/covers/default/front/template.json"
   },
   {
+    "id": "system_image",
+    "name": "Image Cover",
+    "remote": true,
+    "author": "jopp",
+    "source": "https://github.com/colorink-top/public-templates/tree/master/docs/templates/multiple/covers/image/front/",
+    "preview": "templates/multiple/covers/image/front/index.html",
+    "path": "templates/multiple/covers/image/front/template.json",
+    "supportConfig": true
+  },
+  {
     "id": "system_jopp",
     "name": "Just One Page PDF",
     "remote": true,
